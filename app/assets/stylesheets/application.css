@@ -13,3 +13,97 @@
  *= require_tree .
  *= require_self
  */
+ 
+/* .navigation {
+  background-color: #3778c2;
+  height: 60px;
+  width: 100%;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
+
+.splash-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow-y: hidden;
+}
+
+.sp-h1 {
+  font-family: 'Rubik', sans-serif;
+  font-size: 3.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 15%;
+}
+
+.sp-p-1 {
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: center;
+  color: #4a4a4a;
+  margin-top: -2%;
+}
+
+.sp-container-2 {
+  .sp-btn-0 {
+    width: 170px;
+    height: 38px;
+    background-color: #3778c2;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #F1F1F1;
+    font-family: 'Rubik', sans-serif;
+    cursor: pointer;
+    &:hover {
+      background-color: #3735c4;
+      color: white;
+    }
+  }
+
+  .sp-reg-btns {
+    display: flex;
+    flex-direction: row;
+
+    .sp-sign-in {
+      .sp-bt-1 {
+        width: 100px;
+        height: 30px;
+        border: none;
+        margin: 0 3px;
+        background-color: #3778c2;
+        border-radius: 5px;
+        font-size: 16px;
+        color: #f1f1f1;
+        font-family: 'Rubik', sans-serif;
+        cursor: pointer;
+        &:hover {
+          background-color: #3735c4;
+          color: white;
+        }
+      }
+    }
+
+    .sp-sign-up {
+      .sp-bt-2 {
+        width: 100px;
+        height: 30px;
+        border: none;
+        margin: 0 3px;
+        background-color: #3778c2;
+        border-radius: 5px;
+        font-size: 16px;
+        color: #f1f1f1;
+        font-family: 'Rubik', sans-serif;
+        cursor: pointer;
+        &:hover {
+          background-color: #3735c4;
+          color: white;
+        }
+      }
+    }
+  }
+}
