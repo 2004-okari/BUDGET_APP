@@ -7,5 +7,4 @@ class Purchase < ApplicationRecord
   validates :name, presence: true
   validates :amount, presence: true
   validates :categories, presence: true
-
 end
