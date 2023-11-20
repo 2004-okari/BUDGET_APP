@@ -1,0 +1,24 @@
+<div class="">
+  <p class="">Welcome!</br>to my awesome app :)</p>
+  <h1 class="">
+    Budget Monitor
+  </h1>
+  <div class="">
+    <% if user_signed_in? %>
+      <div>
+        <a href="<%= categories_path %>" class="">
+          <button class="">Start Monitoring!</button>
+        </a>
+      </div>
+    <% else %>
+      <div class="flex">
+        <a href="/users/sign_in" class="w-1/2">
+          <button class="">Sign in</button>
+        </a>
+        <a href="/users/sign_up" class="w-1/2">
+          <button class="">Sign up</button>
+        </a>
+      </div>
+    <% end %>
+  </div>
+</div>
