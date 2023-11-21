@@ -22,7 +22,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
 
-
+/* Html */
+body {
+  margin: 0;
+  width: 100vw;
+}
 /* Styles for splash screen  */
 .splash-container {
   display: flex;
@@ -220,4 +224,142 @@
 .lg-forgot-link {
   width: 100%;
   margin: 0 auto;
+}
+
+/* Styles for Home page(Categories Page) */
+.ct-ind-container{
+  width: 100%;
+  max-width: 900px;
+  background-color: #f1f1f1;
+  overflow: hidden;
+  margin: 6px auto;
+
+  .ct-ind-inner-container {
+
+    .ct-ind-navigation {
+      background-color: #3778c2;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      
+      .ct-ind-ul {
+        width: 100%;
+        max-width: 870px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        list-style: none;
+        margin: 0;
+        padding: 0 10px;
+        
+        .ct-ind-p-1 {
+          font-family: 'Rubik', sans-serif;
+          font-size: 1.6rem;
+          font-weight: 500;
+          color: #f1f1f1;
+          margin: 0;
+          letter-spacing: 1px;
+        }
+        
+        .ct-ind-li-2 {
+          .ct-ind-signup-link {
+            font-family: 'Rubik', sans-serif;
+            font-size: 1.3rem;
+            font-weight: 500;
+            color: black;
+            text-decoration: none;
+            &:hover {
+              color: peachpuff;
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .ct-ind-section-2 {
+    width: 100%;
+    .ct-ind-sec-2-div {
+      .ct-ind-btn {
+        font-size: 18px;
+        font-weight: 500;
+        width: 100%;
+        height: 50px;
+        background-color: #5fb523;
+        border: none;
+        font-size: 18px;
+        color: #f1f1f1;
+        font-family: 'Rubik', sans-serif;
+        cursor: pointer;
+        &:hover {
+          background-color: #55b223;
+          color: white;
+        }
+      }
+    }
+  }
+  }
+  
+.ct-ct-container {
+  background-color: white;
+  width: 98%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 4px 6px;
+  margin-bottom: 4px;
+  border-radius: 6px;
+
+  .ct-ct-icon {
+    width: 100px;
+    height: 100px;
+    background-color: #f1f1f1;
+    border-radius: 6px;
+    margin-right: 10px;
+    object-fit: cover;
+    background-color: #4a4a4a;
+  }
+
+  .ct-ct-div-2 {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .ct-ct-div-3 {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      .ct-ct-p-1, .ct-ct-p-2 {
+        font-family: 'Rubik', sans-serif;
+        font-size: 1.2rem;
+        font-weight: 300;
+        text-decoration: none;
+        margin: 0;
+        letter-spacing: 1px;
+      }
+      .ct-ct-p-1 {
+        color: #2C3333;
+      }
+
+      .ct-ct-p-2 {
+        color: #4a4a4a;
+      }
+    }
+
+    .ct-ct-p-3 {
+      font-family: 'Rubik', sans-serif;
+      font-size: 1rem;
+      font-weight: 300;
+      color: #DDE6ED;
+      text-decoration: none;
+      letter-spacing: 1px;
+      margin: 0;
+    }
+  }
 }
