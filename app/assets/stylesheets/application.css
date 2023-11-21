@@ -306,6 +306,7 @@ body {
 .ct-ct-container {
   background-color: white;
   width: 98%;
+  max-width: 900px;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
@@ -479,6 +480,109 @@ body {
       cursor: pointer;
       &:hover {
         background-color: #3735c4;
+        color: white;
+      }
+    }
+  }
+}
+
+/* Styling for  page */
+.pu-pu-div {
+  width: 98%;
+  max-width: 900px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 6px;
+  padding: 0 6px;
+  margin: 0 auto;
+
+  .pu-pu-div-1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    .pu-pu-p-1 {
+      font-family: 'Rubik', sans-serif;
+      color: #2C3333;
+    }
+  }
+  
+  .pu-pu-p-2 {
+    color: #2C3333;
+    font-family: 'Rubik', sans-serif;
+  }
+}
+
+.ct-sh-container {
+  .ct-sh-inner-container {
+    .ct-sh-sec-1 {
+      .ct-sh-sec-div-1 {
+        .ct-sh-link-1 {
+          text-decoration: none;
+        }
+
+      }
+    }
+  }
+
+  .ct-sh-sec-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .ct-sh-link-2 {
+      .ct-sh-btn-1 {
+        width: 180px;
+        height: 34px;
+        border: none;
+        margin: 6px 0;
+        background-color: #3778c2;
+        border-radius: 5px;
+        font-size: 18px;
+        font-weight: 500;
+        color: #f1f1f1;
+        font-family: 'Rubik', sans-serif;
+        cursor: pointer;
+        &:hover {
+          background-color: #3735c4;
+          color: white;
+        }
+      }
+    }
+
+    .ct-sh-btn-2 {
+      width: 180px;
+      height: 34px;
+      border: none;
+      margin: 6px 0;
+      background-color: #0F3D3E;
+      border-radius: 5px;
+      font-size: 18px;
+      font-weight: 500;
+      color: #f1f1f1;
+      font-family: 'Rubik', sans-serif;
+      cursor: pointer;
+      &:hover {
+        background-color: #2F3D3E;
+        color: white;
+      }
+    }
+
+    .ct-sh-btn-3 {
+      width: 180px;
+      height: 34px;
+      border: none;
+      margin: 6px 0;
+      background-color: #952323;
+      border-radius: 5px;
+      font-size: 18px;
+      font-weight: 500;
+      color: #f1f1f1;
+      font-family: 'Rubik', sans-serif;
+      cursor: pointer;
+      &:hover {
+        background-color: #9A3B3B;
         color: white;
       }
     }

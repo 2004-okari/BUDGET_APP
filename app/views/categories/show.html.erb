@@ -1,19 +1,23 @@
-<div class="flex flex-col h-screen justify-between">
-  <div>
-    <div class="navigation py-6 px-3 blue-nav-white-text">
-      <ul class="flex justify-between items-center">
-        <li class="w-10"><%= link_to image_tag('backarrow.png', alt: 'Back'), categories_path, class: 'nav-link' %></li>
-        <h2><strong><%= @category.name %></strong></h2>
-        <li><%= link_to 'Sign Out', destroy_user_session_path, data: { turbo_method: :delete }, class: "nav-link" %></li>
+<div class="ct-sh-container">
+  <div class="ct-sh-inner-container">
+    <div class="ct-new-navigation">
+      <ul class="ct-new-ul">
+        <li class="ct-new-li-1">
+          <%= link_to image_tag('backarrow.png', alt: 'Back'), root_path, class: 'ct-new-nav-link' %>
+        </li>
+        <p class="ct-new-p-1"><%= @category.name %></p>
+        <li class="ct-new-li-2">
+          <%= link_to 'Sign Out', destroy_user_session_path, data: { turbo_method: :delete }, class: "ct-new-signup-link" %>
+        </li>
       </ul>
     </div>
     <p style="color: green"><%= notice %></p>
 
     <%= render @category %>
-    <section class="px-5">
-      <div id="purchases">
+    <section class="ct-sh-sec-1">
+      <div id="purchases" class="ct-sh-sec-div-1">
         <% @purchases.each do |purchase| %>
-          <a href="<%= category_purchase_path(@category, purchase) %>" class="m-1">
+          <a href="<%= category_purchase_path(@category, purchase) %>" class="ct-sh-link-1">
           <%= render "purchases/purchase", purchase: purchase %>
           </a>
         <% end %>
@@ -21,17 +25,17 @@
     </section>
   </div>
 
-  <section class="flex flex-col space-y-2 p-5">
-      <a href="<%= new_category_purchase_path(@category) %>" class="">
-        <button data-testid="new-purchase-button" class="drop-shadow-md p-3 w-full green-btn text-white rounded-md hover:bg-green-600 focus:outline-none focus:bg-green-600">
+  <section class="ct-sh-sec-2">
+      <a href="<%= new_category_purchase_path(@category) %>" class="ct-sh-link-2">
+        <button data-testid="new-purchase-button" class="ct-sh-btn-1">
           New purchase
         </button>
       </a>
 
       <%= link_to edit_category_path(@category) do %>
-        <button data-testid="edit-category-button" class="drop-shadow-md p-3 orange-btn bg-white w-full rounded hover:bg-orange-600">Edit category</button>
+        <button data-testid="edit-category-button" class="ct-sh-btn-2">Edit category</button>
       <% end %>
 
-      <%= button_to "Delete category", @category, method: :delete, data: { confirm: 'Are you sure?' }, class: "drop-shadow-md w-full p-3 red-btn text-white rounded-md hover:bg-red-600 focus:outline-none focus:bg-red-600" %>
+      <%= button_to "Delete category", @category, method: :delete, data: { confirm: 'Are you sure?' }, class: "ct-sh-btn-3" %>
     </section>
   </div>
