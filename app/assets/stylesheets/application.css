@@ -26,6 +26,7 @@
 body {
   margin: 0;
   width: 100vw;
+  background-color: #f1f1f1;
 }
 /* Styles for splash screen  */
 .splash-container {
@@ -364,3 +365,122 @@ body {
   }
 }
 
+/* Styling for adding new category's page */
+.ct-new-navigation {
+  background-color: #3778c2;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  max-width: 900px;
+  width: 100%;
+  margin: 3px auto;
+  
+  .ct-new-ul {
+    width: 100%;
+    max-width: 870px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0 10px;
+    
+    .ct-new-p-1 {
+      font-family: 'Rubik', sans-serif;
+      font-size: 1.6rem;
+      font-weight: 500;
+      color: #f1f1f1;
+      margin: 0;
+      letter-spacing: 1px;
+    }
+    
+    .ct-new-li-2 {
+      .ct-new-signup-link {
+        font-family: 'Rubik', sans-serif;
+        font-size: 1.3rem;
+        font-weight: 500;
+        color: black;
+        text-decoration: none;
+        &:hover {
+          color: peachpuff;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+.ct-fm-container {
+  max-width: 900px;
+  width: 100%;
+  background-color: #f1f1f1;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .ct-fm-div-1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    .ct-fm-text-1 {
+      width: 94.5%;
+      font-family: 'Rubik', sans-serif;
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: #2C3333;
+      margin: 2px auto;
+      letter-spacing: 1px;
+    }
+
+    .ct-fm-ar-1 {
+      width: 94%;
+      height: 34px;
+      outline: none;
+      margin: 0 auto 4px auto;
+    }
+  }
+  .ct-fm-div-2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .ct-fm-text-2 {
+      width: 94.5%;
+      font-family: 'Rubik', sans-serif;
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: #2C3333;
+      margin: 2px auto;
+      letter-spacing: 1px;
+    }
+
+    .ct-fm-ar-2 {
+      width: 94%;
+      height: 34px;
+      outline: none;
+      margin: 0 auto 4px auto;
+      font-size: 20px;
+    }
+  }
+  .ct-fm-div-3 {
+    .ct-fm-ar-3 {
+      width: 120px;
+      height: 34px;
+      border: none;
+      margin: 0 0 8px 0;
+      background-color: #3778c2;
+      border-radius: 5px;
+      font-size: 18px;
+      font-weight: 500;
+      color: #f1f1f1;
+      font-family: 'Rubik', sans-serif;
+      cursor: pointer;
+      &:hover {
+        background-color: #3735c4;
+        color: white;
+      }
+    }
+  }
+}
