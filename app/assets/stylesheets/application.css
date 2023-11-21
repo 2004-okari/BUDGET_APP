@@ -27,6 +27,7 @@ body {
   margin: 0;
   width: 100vw;
   background-color: #f1f1f1;
+  box-sizing: border-box;
 }
 /* Styles for splash screen  */
 .splash-container {
@@ -587,9 +588,56 @@ body {
       font-family: 'Rubik', sans-serif;
       cursor: pointer;
       &:hover {
-        background-color: #3735c4;
+        background-color: #9A3B3B;
         color: white;
       }
     }
+  }
+}
+
+.pu-sh-div-1 {
+  width: 100%;
+  max-width: 900px;
+  margin: 6px auto;
+  display: grid;
+  place-items: center;
+
+  .pu-sh-btn-1 {
+    width: 100px;
+    height: 34px;
+    border: none;
+    margin: 0 auto;
+    background-color: #952323;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #f1f1f1;
+    font-family: 'Rubik', sans-serif;
+    cursor: pointer;
+    &:hover {
+      background-color: #9A3B3B;
+      color: white;
+    }
+  }
+}
+
+.pu-sh-container {
+  width: 98%;
+  max-width: 888px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 6px;
+  padding: 0 6px;
+  margin: 0 auto;
+
+    .pu-sh-p-1 {
+      font-family: 'Rubik', sans-serif;
+      color: #2C3333;
+    }
+  
+  .pu-sh-p-2 {
+    color: #2C3333;
+    font-family: 'Rubik', sans-serif;
   }
 }
