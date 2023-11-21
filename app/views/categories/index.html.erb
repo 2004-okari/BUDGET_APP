@@ -15,9 +15,9 @@
     <section class="ct-ind-section">
       <p style="color: green"><%= notice %></p>
 
-      <div id="ct-ind-categories">
+      <div class="ct-ind-categories">
         <% @categories.each do |category| %>
-          <a href="<%= category_path(category) %>">
+          <a href="<%= category_path(category) %>" class="ct-ind-linked">
             <%= render category %>
           </a>
         <% end %>

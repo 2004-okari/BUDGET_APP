@@ -285,6 +285,14 @@ body {
         }
       }
     }
+
+    .ct-ind-section {
+      .ct-ind-categories {
+        .ct-ind-linked {
+          text-decoration: none;
+        }
+      }
+    }
   }
 
   .ct-ind-section-2 {
