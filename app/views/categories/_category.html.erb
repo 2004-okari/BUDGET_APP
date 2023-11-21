@@ -1,19 +1,19 @@
-<div id="<%= dom_id category %>" class="category-item drop-shadow-md bg-white flex justify-between w-full p-3 rounded">
+<div id="<%= dom_id category %>" class="ct-ct-container">
     <% if category.icon.present? %>
-        <%= image_tag category.icon, alt: category.name, class: 'w-16 rounded' %>
+        <%= image_tag category.icon, alt: category.name, class: 'ct-ct-icon' %>
     <% end %>
 
-  <div class="w-10/12 width-salim flex flex-col justify-between mt-5" style="width: 80%;">
-    <div class="flex justify-between border-b-1">
-    <p class="item-title-color">
-      <strong><%= category.name %></strong>
-    </p>
-    <p class="self-center amount-color">
-      <strong>Total: $<%= category.purchases.sum(:amount) %></strong>
-    </p>
+  <div class="ct-ct-div-2">
+    <div class="ct-ct-div-3">
+      <p class="ct-ct-p-1">
+        <%= category.name %>
+      </p>
+      <p class="ct-ct-p-2">
+        <strong>Total: $<%= category.purchases.sum(:amount) %></strong>
+      </p>
     </div>
     
-    <p class="date-color text-xs">
+    <p class="ct-ct-p-3">
     <span><%= category.created_at.strftime('%d %b %Y') %></span>
     </p>
   </div>

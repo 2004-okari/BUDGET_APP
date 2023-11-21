@@ -1,8 +1,12 @@
-<div class="navigation py-6 px-3 blue-nav-white-text">
-  <ul class="flex justify-between items-center">
-    <li class="w-10"><%= link_to image_tag('backarrow.png', alt: 'Back'), categories_path, class: 'nav-link' %></li>
-    <h2><strong>New purchase</strong></h2>
-    <li><%= link_to 'Sign Out', destroy_user_session_path, data: { turbo_method: :delete }, class: "nav-link" %></li>
+<div class="ct-new-navigation">
+  <ul class="ct-new-ul">
+    <li class="ct-new-li-1">
+      <%= link_to image_tag('backarrow.png', alt: 'Back'), root_path, class: 'ct-new-nav-link' %>
+    </li>
+    <p class="ct-new-p-1">New purchase</p>
+    <li class="ct-new-li-2">
+      <%= link_to 'Sign Out', destroy_user_session_path, data: { turbo_method: :delete }, class: "ct-new-signup-link" %>
+    </li>
   </ul>
 </div>
 
