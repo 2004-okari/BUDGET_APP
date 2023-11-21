@@ -439,7 +439,12 @@ body {
       width: 94%;
       height: 34px;
       outline: none;
+      border: none;
+      border-radius: 5px;
       margin: 0 auto 4px auto;
+      &:focus {
+        outline: none;
+      }
     }
   }
   .ct-fm-div-2 {
@@ -582,7 +587,7 @@ body {
       font-family: 'Rubik', sans-serif;
       cursor: pointer;
       &:hover {
-        background-color: #9A3B3B;
+        background-color: #3735c4;
         color: white;
       }
     }
