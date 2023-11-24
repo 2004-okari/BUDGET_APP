@@ -2,6 +2,7 @@ databases:
   - name: post
     databaseName: post_aa30
     user: post_aa30_user
+    host: dpg-clgglbt8td7s73bhldtg-a
 
 services:
   - type: web
