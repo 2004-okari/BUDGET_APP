@@ -178,16 +178,6 @@ I am grateful to all previous project reviewers for their advice. Thanks to them
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-## ❓ FAQ (OPTIONAL) <a name="faq"></a>
-
-- **Why is there no Live Demo link?**
-
-  - This is a student project and the Live Demo will be added after reaching the corresponding phase of the project.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
