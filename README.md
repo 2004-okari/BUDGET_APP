@@ -70,6 +70,13 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## 🚀 Deployment <a name="deployment"></a>
+- This web app was deployed in render
+
+- Deployment link: [link](https://micronaut.onrender.com)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
