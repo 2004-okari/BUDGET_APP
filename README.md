@@ -66,7 +66,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- The Live Demo will be added after approval of this app.
+- Live Demo link: [link](https://www.loom.com/share/6d452950d186449ab8b1b1d59519305c?sid=45f4d800-5dc3-42bc-af04-147ab3433527)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
