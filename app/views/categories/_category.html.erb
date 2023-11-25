@@ -1,0 +1,20 @@
+<div id="<%= dom_id category %>" class="ct-ct-container">
+    <% if category.icon.present? %>
+        <%= image_tag category.icon, alt: category.name, class: 'ct-ct-icon' %>
+    <% end %>
+
+  <div class="ct-ct-div-2">
+    <div class="ct-ct-div-3">
+      <p class="ct-ct-p-1">
+        <%= category.name %>
+      </p>
+      <p class="ct-ct-p-2">
+        <strong>Total: $<%= category.purchases.sum(:amount) %></strong>
+      </p>
+    </div>
+    
+    <p class="ct-ct-p-3">
+    <span><%= category.created_at.strftime('%d %b %Y') %></span>
+    </p>
+  </div>
+</div>

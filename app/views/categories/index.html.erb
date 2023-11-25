@@ -1,0 +1,37 @@
+<div class="ct-ind-container">
+  <div class="ct-ind-inner-container">
+    <div class="ct-ind-navigation">
+      <ul class="ct-ind-ul">
+        <li class="ct-ind-li-1">
+          <%= link_to image_tag('backarrow.png', alt: 'Back'), root_path, class: 'ct-ind-nav-link' %>
+        </li>
+        <p class="ct-ind-p-1">Categories</p>
+        <li class="ct-ind-li-2">
+          <%= link_to 'Sign Out', destroy_user_session_path, data: { turbo_method: :delete }, class: "ct-ind-signup-link" %>
+        </li>
+      </ul>
+    </div>
+
+    <section class="ct-ind-section">
+      <p style="color: green"><%= notice %></p>
+
+      <div class="ct-ind-categories">
+        <% @categories.each do |category| %>
+          <a href="<%= category_path(category) %>" class="ct-ind-linked">
+            <%= render category %>
+          </a>
+        <% end %>
+      </div>
+    </section>
+  </div>
+
+  <section class="ct-ind-section-2">
+    <%= link_to new_category_path do %>
+      <div class="ct-ind-sec-2-div">
+        <button class="ct-ind-btn">
+          Add a New Category
+        </button>
+      </div>
+    <% end %>
+  </section>
+</div>

@@ -1,0 +1,670 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+/* .navigation {
+  background-color: #3778c2;
+  height: 60px;
+  width: 100%;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
+
+/* Html */
+body {
+  margin: 0;
+  width: 100vw;
+  background-color: #f1f1f1;
+  box-sizing: border-box;
+}
+
+/* Styles for splash screen  */
+.splash-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow-y: hidden;
+}
+
+.sp-h1 {
+  font-family: 'Rubik', sans-serif;
+  font-size: 3.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 15%;
+}
+
+.sp-p-1 {
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: center;
+  color: #4a4a4a;
+  margin-top: -2%;
+}
+
+.sp-container-2 {
+  .sp-btn-0 {
+    width: 170px;
+    height: 38px;
+    background-color: #3778c2;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #f1f1f1;
+    font-family: 'Rubik', sans-serif;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #3735c4;
+      color: white;
+    }
+  }
+
+  .sp-reg-btns {
+    display: flex;
+    flex-direction: row;
+
+    .sp-sign-in {
+      .sp-bt-1 {
+        width: 100px;
+        height: 30px;
+        border: none;
+        margin: 0 3px;
+        background-color: #3778c2;
+        border-radius: 5px;
+        font-size: 16px;
+        color: #f1f1f1;
+        font-family: 'Rubik', sans-serif;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #3735c4;
+          color: white;
+        }
+      }
+    }
+
+    .sp-sign-up {
+      .sp-bt-2 {
+        width: 100px;
+        height: 30px;
+        border: none;
+        margin: 0 3px;
+        background-color: #3778c2;
+        border-radius: 5px;
+        font-size: 16px;
+        color: #f1f1f1;
+        font-family: 'Rubik', sans-serif;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #3735c4;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+/* Styles for Login page and Sign-up page */
+.lg-navigation {
+  background-color: #3778c2;
+  max-width: 600px;
+  width: 100%;
+  height: 50px;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+  display: flex;
+  align-items: center;
+
+  .lg-ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0 10px;
+
+    .lg-p-1 {
+      font-family: 'Rubik', sans-serif;
+      font-size: 1.6rem;
+      font-weight: 500;
+      color: #f1f1f1;
+      margin: 0;
+      letter-spacing: 1px;
+    }
+
+    .lg-li-2 {
+      .lg-signup-link {
+        font-family: 'Rubik', sans-serif;
+        font-size: 1.3rem;
+        font-weight: 500;
+        color: black;
+        text-decoration: none;
+
+        &:hover {
+          color: peachpuff;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+.lg-form-container {
+  background-color: #f1f1f1;
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+
+  .lg-div-1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 8px;
+
+    .lg-email-text {
+      width: 94%;
+      height: 34px;
+      font-size: 18px;
+      padding: 2px 6px;
+      outline: none;
+    }
+  }
+
+  .lg-div-2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 8px;
+
+    .lg-password-text {
+      width: 94%;
+      height: 34px;
+      font-size: 18px;
+      padding: 2px 6px;
+      outline: none;
+    }
+  }
+
+  .lg-div-3 {
+    .lg-submit-btn {
+      width: 120px;
+      height: 34px;
+      border: none;
+      background-color: #3778c2;
+      border-radius: 5px;
+      font-size: 18px;
+      font-weight: 400;
+      color: #f1f1f1;
+      font-family: 'Rubik', sans-serif;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #3735c4;
+        color: white;
+      }
+    }
+  }
+}
+
+.lg-forgot-link {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Styles for Home page(Categories Page) */
+.ct-ind-container {
+  width: 100%;
+  max-width: 900px;
+  background-color: #f1f1f1;
+  overflow: hidden;
+  margin: 6px auto;
+
+  .ct-ind-inner-container {
+    .ct-ind-navigation {
+      background-color: #3778c2;
+      height: 50px;
+      display: flex;
+      align-items: center;
+
+      .ct-ind-ul {
+        width: 100%;
+        max-width: 870px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        list-style: none;
+        margin: 0;
+        padding: 0 10px;
+
+        .ct-ind-p-1 {
+          font-family: 'Rubik', sans-serif;
+          font-size: 1.6rem;
+          font-weight: 500;
+          color: #f1f1f1;
+          margin: 0;
+          letter-spacing: 1px;
+        }
+
+        .ct-ind-li-2 {
+          .ct-ind-signup-link {
+            font-family: 'Rubik', sans-serif;
+            font-size: 1.3rem;
+            font-weight: 500;
+            color: black;
+            text-decoration: none;
+
+            &:hover {
+              color: peachpuff;
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+
+    .ct-ind-section {
+      .ct-ind-categories {
+        .ct-ind-linked {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .ct-ind-section-2 {
+    width: 100%;
+
+    .ct-ind-sec-2-div {
+      .ct-ind-btn {
+        font-weight: 500;
+        width: 100%;
+        height: 50px;
+        background-color: #5fb523;
+        border: none;
+        font-size: 18px;
+        color: #f1f1f1;
+        font-family: 'Rubik', sans-serif;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #55b223;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+.ct-ct-container {
+  background-color: white;
+  width: 98%;
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 4px 6px;
+  margin-bottom: 4px;
+  border-radius: 6px;
+
+  .ct-ct-icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 6px;
+    margin-right: 10px;
+    object-fit: cover;
+    background-color: #4a4a4a;
+  }
+
+  .ct-ct-div-2 {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .ct-ct-div-3 {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      .ct-ct-p-1,
+      .ct-ct-p-2 {
+        font-family: 'Rubik', sans-serif;
+        font-size: 1.2rem;
+        font-weight: 300;
+        text-decoration: none;
+        margin: 0;
+        letter-spacing: 1px;
+      }
+
+      .ct-ct-p-1 {
+        color: #2c3333;
+      }
+
+      .ct-ct-p-2 {
+        color: #4a4a4a;
+      }
+    }
+
+    .ct-ct-p-3 {
+      font-family: 'Rubik', sans-serif;
+      font-size: 1rem;
+      font-weight: 300;
+      color: #dde6ed;
+      text-decoration: none;
+      letter-spacing: 1px;
+      margin: 0;
+    }
+  }
+}
+
+/* Styling for adding new category's page */
+.ct-new-navigation {
+  background-color: #3778c2;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  max-width: 900px;
+  width: 100%;
+  margin: 3px auto;
+
+  .ct-new-ul {
+    width: 100%;
+    max-width: 870px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0 10px;
+
+    .ct-new-p-1 {
+      font-family: 'Rubik', sans-serif;
+      font-size: 1.6rem;
+      font-weight: 500;
+      color: #f1f1f1;
+      margin: 0;
+      letter-spacing: 1px;
+    }
+
+    .ct-new-li-2 {
+      .ct-new-signup-link {
+        font-family: 'Rubik', sans-serif;
+        font-size: 1.3rem;
+        font-weight: 500;
+        color: black;
+        text-decoration: none;
+
+        &:hover {
+          color: peachpuff;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+.ct-fm-container {
+  max-width: 900px;
+  width: 100%;
+  background-color: #f1f1f1;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .ct-fm-div-1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .ct-fm-text-1 {
+      width: 94.5%;
+      font-family: 'Rubik', sans-serif;
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: #2c3333;
+      margin: 2px auto;
+      letter-spacing: 1px;
+    }
+
+    .ct-fm-ar-1 {
+      width: 94%;
+      height: 34px;
+      outline: none;
+      border: none;
+      border-radius: 5px;
+      margin: 0 auto 4px auto;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  .ct-fm-div-2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .ct-fm-text-2 {
+      width: 94.5%;
+      font-family: 'Rubik', sans-serif;
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: #2c3333;
+      margin: 2px auto;
+      letter-spacing: 1px;
+    }
+
+    .ct-fm-ar-2 {
+      width: 94%;
+      height: 34px;
+      outline: none;
+      margin: 0 auto 4px auto;
+      font-size: 20px;
+    }
+  }
+
+  .ct-fm-div-3 {
+    .ct-fm-ar-3 {
+      width: 120px;
+      height: 34px;
+      border: none;
+      margin: 0 0 8px 0;
+      background-color: #3778c2;
+      border-radius: 5px;
+      font-size: 18px;
+      font-weight: 500;
+      color: #f1f1f1;
+      font-family: 'Rubik', sans-serif;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #3735c4;
+        color: white;
+      }
+    }
+  }
+}
+
+/* Styling for  page */
+.pu-pu-div {
+  width: 98%;
+  max-width: 900px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 6px;
+  padding: 0 6px;
+  margin: 0 auto;
+
+  .pu-pu-div-1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    .pu-pu-p-1 {
+      font-family: 'Rubik', sans-serif;
+      color: #2c3333;
+    }
+  }
+
+  .pu-pu-p-2 {
+    color: #2c3333;
+    font-family: 'Rubik', sans-serif;
+  }
+}
+
+.ct-sh-container {
+  .ct-sh-inner-container {
+    .ct-sh-sec-1 {
+      .ct-sh-sec-div-1 {
+        .ct-sh-link-1 {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .ct-sh-sec-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .ct-sh-link-2 {
+      .ct-sh-btn-1 {
+        width: 180px;
+        height: 34px;
+        border: none;
+        margin: 6px 0;
+        background-color: #3778c2;
+        border-radius: 5px;
+        font-size: 18px;
+        font-weight: 500;
+        color: #f1f1f1;
+        font-family: 'Rubik', sans-serif;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #3735c4;
+          color: white;
+        }
+      }
+    }
+
+    .ct-sh-btn-2 {
+      width: 180px;
+      height: 34px;
+      border: none;
+      margin: 6px 0;
+      background-color: #0f3d3e;
+      border-radius: 5px;
+      font-size: 18px;
+      font-weight: 500;
+      color: #f1f1f1;
+      font-family: 'Rubik', sans-serif;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #2f3d3e;
+        color: white;
+      }
+    }
+
+    .ct-sh-btn-3 {
+      width: 180px;
+      height: 34px;
+      border: none;
+      margin: 6px 0;
+      background-color: #952323;
+      border-radius: 5px;
+      font-size: 18px;
+      font-weight: 500;
+      color: #f1f1f1;
+      font-family: 'Rubik', sans-serif;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #9a3b3b;
+        color: white;
+      }
+    }
+  }
+}
+
+.pu-sh-div-1 {
+  width: 100%;
+  max-width: 900px;
+  margin: 6px auto;
+  display: grid;
+  place-items: center;
+
+  .pu-sh-btn-1 {
+    width: 100px;
+    height: 34px;
+    border: none;
+    margin: 0 auto;
+    background-color: #952323;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #f1f1f1;
+    font-family: 'Rubik', sans-serif;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #9a3b3b;
+      color: white;
+    }
+  }
+}
+
+.pu-sh-container {
+  width: 98%;
+  max-width: 888px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 6px;
+  padding: 0 6px;
+  margin: 0 auto;
+
+  .pu-sh-p-1 {
+    font-family: 'Rubik', sans-serif;
+    color: #2c3333;
+  }
+
+  .pu-sh-p-2 {
+    color: #2c3333;
+    font-family: 'Rubik', sans-serif;
+  }
+}

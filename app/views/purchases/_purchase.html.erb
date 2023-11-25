@@ -1,0 +1,18 @@
+<div id="<%= dom_id purchase %>" class="pu-pu-div">
+<div class="pu-pu-div-1">
+  <p class="pu-pu-p-1">
+    <strong>NAME: </strong><%= purchase.name %>
+  </p>
+
+  <p class="pu-pu-p-1">
+    <span><%= purchase.created_at.strftime('%d %b %Y') %></span>
+  </p>
+</div>
+  
+  <p class="pu-pu-p-2">
+    <strong>TOTAL PAYMENT: </strong>
+    $<%= purchase.amount %>
+  </p>
+
+</div>
+

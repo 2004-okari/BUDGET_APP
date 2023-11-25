@@ -1,0 +1,24 @@
+<div class="splash-container">
+  <p class="sp-h1">
+  Budget Monitor
+  </p>
+  <p class="sp-p-1">Watchman to your Budget</p>
+  <div class="sp-container-2">
+    <% if user_signed_in? %>
+      <div>
+        <a href="<%= categories_path %>" class="sp-monitor-link">
+          <button class="sp-btn-0">Start Monitoring</button>
+        </a>
+      </div>
+    <% else %>
+      <div class="sp-reg-btns">
+        <a href="/users/sign_in" class="sp-sign-in">
+          <button class="sp-bt-1">Sign in</button>
+        </a>
+        <a href="/users/sign_up" class="sp-sign-up">
+          <button class="sp-bt-2">Sign up</button>
+        </a>
+      </div>
+    <% end %>
+  </div>
+</div>

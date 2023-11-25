@@ -1,0 +1,29 @@
+<div class="lg-navigation">
+  <ul class="lg-ul">
+    <li class="lg-li-1">
+      <%= link_to image_tag('backarrow.png', alt: 'Back'), root_path, class: 'lg-nav-link' %>
+    </li>
+    <p class="lg-p-1">LOGIN</p>
+    <li class="lg-li-2">
+      <%= link_to 'Sign Out', destroy_user_session_path, data: { turbo_method: :delete }, class: "lg-signup-link" %>
+    </li>
+  </ul>
+</div>
+
+<%= form_for(resource, as: resource_name, url: session_path(resource_name), html: { class: 'lg-form-container' }) do |f| %>
+  <div class="lg-div-1">
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", class: 'lg-email-text', placeholder: 'Email' %>
+  </div>
+
+  <div class="lg-div-2">
+    <%= f.password_field :password, autocomplete: "current-password", class: 'lg-password-text', placeholder: 'Password' %>
+  </div>
+
+  <div class="lg-div-3">
+    <%= f.submit "Log in", class: 'lg-submit-btn' %>
+  </div>
+<% end %>
+
+<div class="lg-forgot-link">
+  <%= render "devise/shared/links" %>
+</div>

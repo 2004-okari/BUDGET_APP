@@ -1,0 +1,27 @@
+<%= form_with(model: category, class: 'ct-fm-container') do |form| %>
+  <% if category.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(category.errors.count, "error") %> prohibited this category from being saved:</h2>
+
+      <ul>
+        <% category.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="ct-fm-div-1">
+    <%= form.label :name, class: "ct-fm-text-1" %>
+    <%= form.text_field :name, class: 'ct-fm-ar-1' %>
+  </div>
+
+  <div class="ct-fm-div-2">
+    <%= form.label :icon, class: "ct-fm-text-2" %>
+    <%= form.file_field :icon, id: 'icon_upload', class: 'ct-fm-ar-2' %>
+  </div>
+
+  <div class="ct-fm-div-3">
+    <%= form.submit "Save", class: 'ct-fm-ar-3' %>
+  </div>
+<% end %>
